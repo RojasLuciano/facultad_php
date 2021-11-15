@@ -1,0 +1,104 @@
+//SQL
+	CREATE TABLE usuarios (
+	id int NOT NULL AUTO_INCREMENT,
+	usuario varchar(255) NOT NULL,
+	clave varchar(255) NOT NULL,
+	mail varchar(255) NOT NULL,
+	tipo varchar(255) DEFAULT NULL,
+	PRIMARY KEY (id)
+	);
+	
+	CREATE TABLE hortalizas (
+	id int NOT NULL AUTO_INCREMENT,
+	precio int NOT NULL,
+	nombre varchar(255) NOT NULL,
+	foto varchar(255) NOT NULL,
+	clima varchar(255) DEFAULT NULL,
+	tipoUnidad varchar(255) DEFAULT NULL,
+	PRIMARY KEY (id)
+	);
+
+
+
+
+//Post cargar usuario 
+{
+    "usuario": "luchito",
+    "clave": 3354,
+	"mail": "luchito@gmail.com",
+    "tipo": "comprador"
+}
+
+{
+    "usuario": "felipe",
+    "clave": 3354,
+	"mail": "felipe@gmail.com",
+    "tipo": "vendedor"
+}
+
+{
+    "usuario": "bonini",
+    "clave": 3354,
+	"mail": "bonini@gmail.com",
+    "tipo": "proveedor"
+}
+
+
+//Post validar usuario
+{
+    "usuario": "bonini",
+    "clave": 3354,
+	"mail": "bonini@gmail.com",
+    "tipo": "proveedor"
+}
+
+//Post cargar hortalizas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
