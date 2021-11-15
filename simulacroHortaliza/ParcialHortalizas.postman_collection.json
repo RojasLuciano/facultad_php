@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "46c84547-4e6e-4956-8c37-c216b3120f84",
+		"name": "ParcialHortalizas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "altaUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"admin2\",\r\n    \"clave\": 3354,\r\n\t\"mail\": \"admin@gmail.com\",\r\n    \"tipo\": \"admin2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/altausuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"altausuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"luchito\",\r\n    \"clave\": 3354,\r\n\t\"mail\": \"luchito@gmail.com\",\r\n    \"tipo\": \"comprador\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/verificar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"verificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar por tipoUnidad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:100/app/parcial/tipo/paquete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"tipo",
+						"paquete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar por clima",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:100/app/parcial/clima/seco",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"clima",
+						"seco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "traer una hortaliza por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"felipe\",\r\n    \"clave\": 3354\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alta hortaliza",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"felipe\",\r\n    \"clave\": 3354,\r\n    \"nombre\":\"cebollas\",\r\n    \"precio\": 1,\r\n    \"clima\": \"todos\",\r\n    \"tipoUnidad\":\"paquete\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/alta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"alta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alta de ventaHortaliza",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "felipe",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "3354",
+							"type": "text"
+						},
+						{
+							"key": "idHortaliza",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nombreCliente",
+							"value": "Rengoku",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "2021-02-09",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "tipoUnidad",
+							"value": "bolsa",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/Felipe/Desktop/Informatica/Imagenes de Pruebas/verde_oscuro.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/ventaHortaliza",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"ventaHortaliza"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer todas las ventas de hortalizas de clima seco entre en 10 y 13 de junio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"felipe\",\r\n    \"clave\": 3354\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/fechas/2021-02-10/2021-02-13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"fechas",
+						"2021-02-10",
+						"2021-02-13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " Traer todos los usuarios que compraron",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\":\"bonini\",\r\n    \"clave\": 3354\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/buscar/papas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"buscar",
+						"papas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrado de una hortaliza por ID->solo vendedor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"felipe\",\r\n    \"clave\": 3354\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/borrar/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"borrar",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pdf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:100/app/parcial/pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "3354",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "marron",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "clima",
+							"value": "todos",
+							"type": "text"
+						},
+						{
+							"key": "tipoUnidad",
+							"value": "paquete",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/Felipe/Desktop/Informatica/Imagenes de Pruebas/marron.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:100/app/parcial/modificar/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "100",
+					"path": [
+						"app",
+						"parcial",
+						"modificar",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

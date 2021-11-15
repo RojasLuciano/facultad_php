@@ -50,7 +50,7 @@ class Hortaliza
     {
         $this->clima = $clima;
     }
-    
+
     public function getTipoUnidad()
     {
         return $this->tipoUnidad;
@@ -170,8 +170,8 @@ class Hortaliza
         $output = false;
 
         foreach ($files as $file) {
-            if ($file == $fileToFind[3]){
-/*                 echo "<br> originalDir :" . $originalDir . $file . "</br>";
+            if ($file == $fileToFind[3]) {
+                /*                 echo "<br> originalDir :" . $originalDir . $file . "</br>";
                 echo "<br> destination :" . $destination . $file . "</br>"; */
                 rename($originalDir . $file, $destination . $file);
                 $output = true;
@@ -195,8 +195,4 @@ class Hortaliza
         $consulta->bindValue(':id', $this->id, PDO::PARAM_INT);
         return $consulta->execute();
     }
-
-
-
-
 }

@@ -17,6 +17,7 @@ require_once './middlewares/VerificacionMiddleware.php';
 require_once './api/UsuarioApi.php';
 require_once './api/HortalizaApi.php';
 require_once './api/VentaApi.php';
+require_once './api/FileManagerApi.php';
 
 // Load ENV
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -114,7 +115,13 @@ $app->group('/parcial', function (RouteCollectorProxy $group) {
   /* 
   11-(GET)Un PDF listado de todas ventas.
   */
-  $group->get('/pdf', \VentaApi::class . ':generarPDF');
+  $group->get('/pdf', \FileManagerApi::class . ':generarPDF');
+
+  /* 
+  CSV con hortalizas
+  */
+  $group->get('/csv', \FileManagerApi::class . ':DescargaHortalizas');
+
 
 });
 

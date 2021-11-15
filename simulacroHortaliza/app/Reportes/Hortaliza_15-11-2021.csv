@@ -1,0 +1,134 @@
+[
+    [
+        {
+            "id": 1,
+            "precio": 1,
+            "nombre": "zanahorias",
+            "clima": "seco",
+            "foto": null,
+            "tipoUnidad": "kilo"
+        },
+        {
+            "id": 2,
+            "precio": 2,
+            "nombre": "papas",
+            "clima": "humedo",
+            "foto": null,
+            "tipoUnidad": "bolsa"
+        },
+        {
+            "id": 3,
+            "precio": 1,
+            "nombre": "cebollas",
+            "clima": "todos",
+            "foto": null,
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 4,
+            "precio": 1,
+            "nombre": "porotos",
+            "clima": "seco",
+            "foto": null,
+            "tipoUnidad": "kilo"
+        },
+        {
+            "id": 6,
+            "precio": 23,
+            "nombre": "poroto",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/poroto_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 7,
+            "precio": 23,
+            "nombre": "poroto",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/poroto_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 8,
+            "precio": 23,
+            "nombre": "marron",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/marron_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 9,
+            "precio": 1,
+            "nombre": "verde",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/verde_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "precio": 1,
+            "nombre": "zanahorias",
+            "clima": "seco",
+            "foto": null,
+            "tipoUnidad": "kilo"
+        },
+        {
+            "id": 2,
+            "precio": 2,
+            "nombre": "papas",
+            "clima": "humedo",
+            "foto": null,
+            "tipoUnidad": "bolsa"
+        },
+        {
+            "id": 3,
+            "precio": 1,
+            "nombre": "cebollas",
+            "clima": "todos",
+            "foto": null,
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 4,
+            "precio": 1,
+            "nombre": "porotos",
+            "clima": "seco",
+            "foto": null,
+            "tipoUnidad": "kilo"
+        },
+        {
+            "id": 6,
+            "precio": 23,
+            "nombre": "poroto",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/poroto_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 7,
+            "precio": 23,
+            "nombre": "poroto",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/poroto_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 8,
+            "precio": 23,
+            "nombre": "marron",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/marron_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        },
+        {
+            "id": 9,
+            "precio": 1,
+            "nombre": "verde",
+            "clima": "todos",
+            "foto": ".\/models\/Fotos\/verde_2021-11-15.png",
+            "tipoUnidad": "paquete"
+        }
+    ]
+]
